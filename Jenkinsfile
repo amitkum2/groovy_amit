@@ -4,15 +4,34 @@ pipeline
 		
 			stages
 			{
-				stage('print hi')
+				stage('GIT CLONING')
 				{
 					steps
 					{
-							sh 'echo hi'
+							sh 'echo git clone '
 					}
 					
 					
 				}
+				stage('Test')
+				{
+					steps
+					{
+							sh 'echo test'
+					}
+					
+					
+				}
+				stage('Build Stage')
+				{
+					steps
+					{
+							sh 'echo build ho gya'
+					}
+					
+					
+				}
+				
 				}
 			
 	}
