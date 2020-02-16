@@ -31,7 +31,22 @@ pipeline
 					
 					
 				}
+				stage('Get approval')
+				{
+					input "Deploy to QA?"
+					
+					
+				}
 				
+				stage('Deploying')
+				{
+					steps
+					{
+							sh 'echo Deploying'
+					}
+					
+					
+				}
 				}
 			
 	}
