@@ -33,8 +33,10 @@ pipeline
 				}
 				stage('Get approval')
 				{
+					steps
+					{
 					input "Deploy to QA?"
-					
+					}
 					
 				}
 				
